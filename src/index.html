@@ -4,41 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
+  <!--Enlace CSS-->
   <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-  <!-- TÍTULO, DESCRIPCIÓN Y BOTONES CON OPCIONES CIFRAR O DESCIFRAR -->
+  <!-- TÍTULO, DESCRIPCIÓN Y BOTONES CON lAS OPCIONES CIFRAR O DESCIFRAR -->
   <div class="categories" id="root" style="display:block">
     <h1>Secretos del Amor</h1>
-    <p>Envia un mensaje secreto de Amor<br>&#128477 La llave guarda tu secreto &#128477<br>No te olvides de enviarla
-      junto a tu<br>mensaje para que tu amor lo pueda leer</p><br>
-    <input type="button" id="buttonCipher" class="buttonPink" value="cifrar">
-    <input type="button" id="buttonDecipher" class="buttonPink" value="descifrar">
+    <p>Envia un mensaje secreto de Amor<br>&#128477 La llave guarda tu secreto &#128477<br>No te olvides de enviar la llave
+      junto a tu<br>secreto para que tu amor lo pueda leer</p><br>
+    <input type="button" id="button_cipher" class="buttonpink" value="cifrar">
+    <input type="button" id="button_decipher" class="buttonpink" value="descifrar">
   </div>
   <!-- CIFRAR -->
-  <div id="cipherScreen" style="display:none">
+  <div id="cipher_screen" style="display:none">
     <h1>Cifrar Secreto</h1>
     <p>Texto a cifrar</p>
-    <textarea name="textcipher1" id="textcipher1" cols="40" rows="3"></textarea><br>
-    <label for="key">Llave &#128477</label>
-    <textarea name="key" placeholder="n°" id="key" cols="5" rows="1"></textarea>
-    <input type="button" id="btnencode" class="buttonPink" value="cifrar">
+    <textarea id="textcipher1" cols="40" rows="3"></textarea><br>
+    <label for="key1">Llave &#128477</label>
+    <textarea name="key1" placeholder="n°" id="key1" cols="5" rows="1"></textarea>
+    <input type="button" id="btn_encode" class="buttonpink" value="cifrar">
     <p>Secreto</p>
-    <textarea name="cipheredSecret" id="cipheredSecret" cols="40" rows="3"></textarea><br>
-    <a type="button" class="buttonPink" href="index.html">volver</a>
+    <textarea id="ciphered_secret" cols="40" rows="3"></textarea><br>
+    <input type="button" id="back_from_encode" class="buttonpink" value="volver">
   </div>
   <!-- DESCIFRAR -->
-  <div id="decipherScreen" style="display:none">
+  <div id="decipher_screen" style="display:none">
     <h1>Descifrar Secreto</h1>
     <p>Texto a Descifrar</p>
-    <textarea name="textdecipher2" id="textdecipher2" cols="40" rows="3"></textarea><br>
+    <textarea id="textdecipher2" cols="40" rows="3"></textarea><br>
     <label for="key2">Llave &#128477</label>
     <textarea name="key2" placeholder="n°" id="key2" cols="5" rows="1"></textarea>
-    <input type="button" id="btndecode" class="buttonPink" value="descifrar" onclick="">
+    <input type="button" id="btn_decode" class="buttonpink" value="descifrar" onclick="">
     <p>Secreto</p>
-    <textarea name="decipheredSecret" id="decipheredSecret" cols="40" rows="3"></textarea><br />
-    <a type="button" class="buttonPink" href="index.html">volver</a>
+    <textarea id="deciphered_secret" cols="40" rows="3"></textarea><br />
+    <input type="button" id="back_from_decode" class="buttonpink" value="volver">
   </div>
   <!-- ENLACES DE DOCS JS -->
   <script src="cipher.js"></script>

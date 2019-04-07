@@ -1,18 +1,14 @@
 //Declarando variables
 const containerRoot = document.getElementById("root");
-const btnCipher = document.getElementById("buttonCipher");
-const btnDecipher = document.getElementById("buttonDecipher");
-let showCipher = document.getElementById("cipherScreen");
-let showDecipher = document.getElementById("decipherScreen");
-const btnEncode = document.getElementById("btnencode");
-const btnDecode = document.getElementById("btndecode");
-let textToCipher;
-let textToDecipher;
-let offsetEn;
-let offsetDe;
-let encodeResult;
-let decodeResult;
-//Cambiar de atributo de display - Mostrar Div Cipher
+const btnCipher = document.getElementById("button_cipher");
+const btnDecipher = document.getElementById("button_decipher");
+const showCipher = document.getElementById("cipher_screen");
+const showDecipher = document.getElementById("decipher_screen");
+const btnEncode = document.getElementById("btn_encode");
+const btnDecode = document.getElementById("btn_decode");
+const btnBackEn = document.getElementById("back_from_encode");
+const btnBackDe = document.getElementById("back_from_decode");
+//Cambiar de atributo de display - Mostrar Div Cifrar
 btnCipher.addEventListener("click", () => {
     containerRoot.style.display = (containerRoot.style.display == "block") ? "none" : "block";
     showCipher.style.display = (showCipher.style.display == "none") ? "block" : "none";
@@ -22,19 +18,29 @@ btnDecipher.addEventListener("click", () => {
     containerRoot.style.display = (containerRoot.style.display=="block") ?"none" : "block";
     showDecipher.style.display = (showDecipher.style.display=="none") ?"block" : "none";
 });
+//Botón volver desde Cifrar
+btnBackEn.addEventListener("click", () => {
+    showCipher.style.display = (showCipher.style.display == "none") ? "block" : "none";
+    containerRoot.style.display = (containerRoot.style.display == "block") ? "none" : "block";
+})
+//Botón volver desde Descifrar
+btnBackDe.addEventListener("click", () => {
+    showDecipher.style.display = (showDecipher.style.display=="none") ?"block" : "none";
+    containerRoot.style.display = (containerRoot.style.display == "block") ? "none" : "block";
+})
 //Botón que llama a la función CIFRAR
 btnEncode.addEventListener("click", () => {
-    textToCipher = document.getElementById("textcipher1").value;
-    offsetEn = parseInt(document.getElementById("key").value);
-    encodeResult = document.getElementById("cipheredSecret");
+    let textToCipher = document.getElementById("textcipher1").value;
+    let offsetEn = parseInt(document.getElementById("key1").value);
+    let encodeResult = document.getElementById("ciphered_secret");
     encodeResult.innerHTML= window.cipher.encode(offsetEn, textToCipher);
 }
 );
 //Botón que llama a la función DESCIFRAR
 btnDecode.addEventListener("click", () => {
-    textToDecipher = document.getElementById("textdecipher2").value;
-    offsetDe = parseInt(document.getElementById("key2").value);
-    decodeResult = document.getElementById("decipheredSecret");
+    let textToDecipher = document.getElementById("textdecipher2").value;
+    let offsetDe = parseInt(document.getElementById("key2").value);
+    let decodeResult = document.getElementById("deciphered_secret");
     decodeResult.innerHTML= window.cipher.decode(offsetDe, textToDecipher);
 }
 );

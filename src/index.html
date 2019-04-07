@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- TÍTULO, DESCRIPCIÓN Y BOTONES CON OPCIONES CIFRAR O DESCIFRAR -->
+  <div class="categories" id="root" style="display:block">
+    <h1>Secretos del Amor</h1>
+    <p>Envia un mensaje secreto de Amor<br>&#128477 La llave guarda tu secreto &#128477<br>No te olvides de enviarla
+      junto a tu<br>mensaje para que tu amor lo pueda leer</p><br>
+    <input type="button" id="buttonCipher" class="buttonPink" value="cifrar">
+    <input type="button" id="buttonDecipher" class="buttonPink" value="descifrar">
+  </div>
+  <!-- CIFRAR -->
+  <div id="cipherScreen" style="display:none">
+    <h1>Cifrar Secreto</h1>
+    <p>Texto a cifrar</p>
+    <textarea name="textcipher1" id="textcipher1" cols="40" rows="3"></textarea><br>
+    <label for="key">Llave &#128477</label>
+    <textarea name="key" placeholder="n°" id="key" cols="5" rows="1"></textarea>
+    <input type="button" id="btnencode" class="buttonPink" value="cifrar">
+    <p>Secreto</p>
+    <textarea name="cipheredSecret" id="cipheredSecret" cols="40" rows="3"></textarea><br>
+    <a type="button" class="buttonPink" href="index.html">volver</a>
+  </div>
+  <!-- DESCIFRAR -->
+  <div id="decipherScreen" style="display:none">
+    <h1>Descifrar Secreto</h1>
+    <p>Texto a Descifrar</p>
+    <textarea name="textdecipher2" id="textdecipher2" cols="40" rows="3"></textarea><br>
+    <label for="key2">Llave &#128477</label>
+    <textarea name="key2" placeholder="n°" id="key2" cols="5" rows="1"></textarea>
+    <input type="button" id="btndecode" class="buttonPink" value="descifrar" onclick="">
+    <p>Secreto</p>
+    <textarea name="decipheredSecret" id="decipheredSecret" cols="40" rows="3"></textarea><br />
+    <a type="button" class="buttonPink" href="index.html">volver</a>
+  </div>
+  <!-- ENLACES DE DOCS JS -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

@@ -8,7 +8,11 @@ window.cipher = {
         result += String.fromCharCode((ascNumEn - 65 + offsetEn) % 26 + 65);
       } else if(ascNumEn >= 97 && ascNumEn <=  122) {
         result += String.fromCharCode((ascNumEn - 97 + offsetEn) % 26 + 97);
-      } else {
+      } else if (ascNumEn == 209) {
+        result += String.fromCharCode(201);
+      } else if (ascNumEn == 241) {
+        result += String.fromCharCode(233);
+       } else {
         result += textToCipher[i];
       }
     }
@@ -24,6 +28,10 @@ window.cipher = {
                 result2 += String.fromCharCode((ascNumDe - 65 + (26 - offsetDe %26)) % 26 + 65);    
               } else if(ascNumDe >= 97 && ascNumDe <=  122) {
                 result2 += String.fromCharCode((ascNumDe - 97 + (26 - offsetDe %26)) % 26 + 97);
+              } else if (ascNumDe == 201) {
+                result2 += String.fromCharCode(209);
+              } else if (ascNumDe == 233) {
+                result2 += String.fromCharCode(241);
               } else {
             result2 += textToDecipher[i];
           }

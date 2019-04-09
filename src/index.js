@@ -22,11 +22,17 @@ btnDecipher.addEventListener("click", () => {
 btnBackEn.addEventListener("click", () => {
     showCipher.style.display = (showCipher.style.display == "none") ? "block" : "none";
     containerRoot.style.display = (containerRoot.style.display == "block") ? "none" : "block";
+    document.getElementById("textcipher1").value = "";
+    document.getElementById("key1").value = "";
+    document.getElementById("ciphered_secret").value ="";
 })
 //Botón volver desde Descifrar
 btnBackDe.addEventListener("click", () => {
     showDecipher.style.display = (showDecipher.style.display=="none") ?"block" : "none";
     containerRoot.style.display = (containerRoot.style.display == "block") ? "none" : "block";
+    document.getElementById("textdecipher2").value = "";
+    document.getElementById("key2").value = "";
+    document.getElementById("deciphered_secret").value = "";
 })
 //Botón que llama a la función CIFRAR
 btnEncode.addEventListener("click", () => {

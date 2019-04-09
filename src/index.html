@@ -23,7 +23,7 @@
     <p>Texto a cifrar</p>
     <textarea id="textcipher1" cols="40" rows="3"></textarea><br>
     <label for="key1">Llave &#128477</label>
-    <textarea name="key1" placeholder="n°" id="key1" cols="5" rows="1"></textarea>
+    <input type="number" name="key1" class="key" placeholder="n°" id="key1">
     <input type="button" id="btn_encode" class="buttonpink" value="cifrar">
     <p>Secreto</p>
     <textarea id="ciphered_secret" cols="40" rows="3"></textarea><br>
@@ -35,7 +35,7 @@
     <p>Texto a Descifrar</p>
     <textarea id="textdecipher2" cols="40" rows="3"></textarea><br>
     <label for="key2">Llave &#128477</label>
-    <textarea name="key2" placeholder="n°" id="key2" cols="5" rows="1"></textarea>
+    <input type="number" name="key2" class="key" placeholder="n°" id="key2">
     <input type="button" id="btn_decode" class="buttonpink" value="descifrar" onclick="">
     <p>Secreto</p>
     <textarea id="deciphered_secret" cols="40" rows="3"></textarea><br />

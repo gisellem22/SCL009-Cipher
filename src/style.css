@@ -1,14 +1,16 @@
 body  {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Georgia'; 
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 600;
     text-align: justify;
     text-justify: inter-word;
     width: 100%;
     height: cover;
     background-image: url(https://i.pinimg.com/originals/6b/fa/97/6bfa97f8001f0e169496a79a6737ba54.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0px;
 }
 div{
     box-sizing: border-box;
@@ -20,7 +22,7 @@ div{
     text-align: center;
     padding: 1em 1em 0.5em 1em;
   }
-    .buttonpink {
+    .buttonroot1 {
         background-color: #FA5882;
         border: none;
         color: #ffffff;
@@ -31,20 +33,53 @@ div{
         font-size: 24px;
         margin: 4px 2px;
         cursor: pointer;
+        margin-left: 140px;
       }
-      .textposition{
-        
+      .buttonroot2 {
+        background-color: #FA5882;
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 20px;
       }
-
+      .buttonpink {
+        background-color: #FA5882;
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 2px 2px;
+        cursor: pointer;
+        margin-left: 0px;
+      }
       textarea {
         resize: none;
         font-size: 20px;
       }
       h1 {
-        margin-left: 50px;
+        font-family: 'Brush Script MT';
+        margin-left: 150px;
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
       }
       .key {
-        width: 5em;
+        width: 3em;
         height:2em;
+        font-size: 20px;
       }
+      .llave {
+        font-size: 15px;
+        text-align: center;
+      }
+      .welcometext {
+        margin-left: 50px;
+      }
+     

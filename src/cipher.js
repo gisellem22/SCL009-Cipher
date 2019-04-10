@@ -1,22 +1,22 @@
 window.cipher = {
   encode: (offsetEn, textToCipher) => {
-    let result ="";
+    let result1 ="";
     for (let i = 0; i < textToCipher.length; i++){
       let ascNumEn = '';
       ascNumEn += textToCipher.charCodeAt(i);
       if(ascNumEn >= 65 && ascNumEn <=  90) {
-        result += String.fromCharCode((ascNumEn - 65 + offsetEn) % 26 + 65);
+        result1 += String.fromCharCode((ascNumEn - 65 + offsetEn) % 26 + 65);
       } else if(ascNumEn >= 97 && ascNumEn <=  122) {
-        result += String.fromCharCode((ascNumEn - 97 + offsetEn) % 26 + 97);
+        result1 += String.fromCharCode((ascNumEn - 97 + offsetEn) % 26 + 97);
       } else if (ascNumEn == 209) {
-        result += String.fromCharCode(201);
+        result1 += String.fromCharCode(201);
       } else if (ascNumEn == 241) {
-        result += String.fromCharCode(233);
+        result1 += String.fromCharCode(233);
        } else {
-        result += textToCipher[i];
+        result1 += textToCipher[i];
       }
     }
-    return result; 
+    return result1; 
   },
 
   decode: (offsetDe, textToDecipher) => {

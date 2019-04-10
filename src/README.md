@@ -31,10 +31,12 @@ La interfaz permite al usuario:
 
 ![decipher](img/decipher.jpg)
 ***
-## Como ejecutar la aplicación
+## Como acceder la aplicación
 
-Descripción
-- Link Github
+Para ir a la aplicación se puede acceder al seguiente link:
+
+[https://gisellem22.github.io/SCL009-Cipher/src/index.html](https://gisellem22.github.io/SCL009-Cipher/src/index.html)
+- 
 ***
 ##Implementado con
 

@@ -38,24 +38,24 @@ Para ir a la aplicación se puede acceder al seguiente link:
 [https://gisellem22.github.io/SCL009-Cipher/src/index.html](https://gisellem22.github.io/SCL009-Cipher/src/index.html)
 - 
 ***
-##Implementado con
+## Implementado con
 
 - JavaScript.
 - HTML5.
 - CSS.
 ***
-##Decisiones de diseño
+## Decisiones de diseño
 #### Diagrama de flujo
 ![diagrama](img/diagrama.jpg)
 
-####Prototipo de baja fidelidad
+#### Prototipo de baja fidelidad
 ![prototipo1](img/prototipo1.jpg)
 ![prototipo2](img/prototipo2.jpg)
 ![prototipo3](img/prototipo3.jpg)
 ![prototipo4](img/prototipo4.jpg)
 ![prototipo5](img/prototipo5.jpg)
 
-####Tests de Usuario
+#### Tests de Usuario
 
 Trás los tests de Usuario fueron agregados descripciones con más detalles a los campos de informaciones a ser ingresadas por el usuario para que la funcionalidad de cada elemento estuviera más clara.
 [Video - User Test "Secretos del Amor"](https://www.youtube.com/watch?v=uJHNdyivZ68&feature=youtu.be)
